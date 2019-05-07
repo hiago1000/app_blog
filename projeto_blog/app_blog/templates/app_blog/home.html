@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <style>
+        div.a{
+            text-align: center
+        }
+    </style>
+
+<div class="a">
+<h1>Posts</h1>
+
+{% for postagem in object_list%}
+	<div>
+		<a href="{{ postagem.id }}"><h2>{{postagem.titulo}}</h2></a>
+		<br>
+	</div>
+{% endfor %}
+</div>
+</body>
+</html>
